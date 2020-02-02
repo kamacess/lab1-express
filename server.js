@@ -4,6 +4,7 @@ require("dotenv").config();
 const express = require("express");
 const hbs = require("hbs");
 const server = express();
+const path = require("path")
 
 // server initial config 
 
@@ -15,15 +16,38 @@ hbs.registerPartials("./views/partials");
 
 // routing
 
+
 server.get("/", (req, res) => {
-    res.render("home");
+    const data = {
+      css: ["base"]
+    }
+    res.render("base", data);
+  });
+  
+server.get("/quoi", (req, res) => {
+  const data = {
+    css:  ["quoi"]
+  }
+  res.render("quoi", data);
+});
+  
+server.get("/gentillesses", (req, res) => {
+  const data = {
+    css: ["gentillesses"]
+  };
+  res.render("gentillesses", data);
 });
 
-// the artists router contains 3 routes : 
-server.use(require("./routes/artists"));
+server.get("/bon", (req, res) => {
+    const data = {
+        css: ["bon"]
+    };
+    res.render("bon", data);
+});
+
 
 // server kickstart
 server.listen(process.env.PORT, () => {
-    console.log(`erver ready @ http://localhost:${process.env.PORT}`)
+    console.log(`server ready @ http://localhost:${process.env.PORT}`)
 })
 

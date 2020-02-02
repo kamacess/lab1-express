@@ -1,0 +1,23 @@
+#top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    padding: 15px;
+}
+
+
+#top a,
+#top a :visited,
+#top a :hover,
+#top a :active {
+    text-decoration: none;
+    color: #ff9aca;
+}
+
+#top a:hover {
+    color: #ff9aca;
+}
+
+#top a:active {
+    color: #ffb3d7;
+}
