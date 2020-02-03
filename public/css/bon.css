@@ -1,6 +1,35 @@
 #voucher {
-     border: 3px dashed bisque;
-     margin: 50px;
-     padding: 50px;
-
+     border: 3px dashed #ff9aca;
+     margin: 50px auto;
+     padding: 100px;
+     background-color: gray;
+     opacity: 0.65;
+     color: #ff9aca;
+     width: 50vw;
 }
+#voucher p {
+     opacity: 1;
+}
+
+article p {
+     text-align: center;
+     margin-top: 15px;
+     font-size: 1.5em;
+}
+
+article h3 {
+     text-align: center;
+     margin-bottom: 100px;
+}
+
+#voucher h2 {
+     font-size: 2.5em;
+     margin: 25px;
+}
+
+aside {
+      text-align: right;
+      font-size: 5em;
+      opacity: 1;
+ }
+

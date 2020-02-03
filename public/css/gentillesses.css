@@ -11,6 +11,17 @@ body {
    background-image: url(./../assets/img/background1.jpg);
 }
 
+.titre {
+    background-color: gray;
+    opacity: 0.75;
+}
+h2 {
+    color: #ff9aca;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
